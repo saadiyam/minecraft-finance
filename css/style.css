@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body
+{   font-family: 'VT323', monospace!important;
+	overflow-x: hidden;
+    background-color: rgb(250, 249, 250);
+    font-size: 25px;
+    color: rgb(32, 34, 36);
+    line-height: 1.5;
+    padding-bottom: 100px;
+}
+
+#panorama {
+    image-rendering: auto;
+    background: #303030 url(../images/panorama-blurred.png) repeat-x 0 0;
+    background-size: cover;
+    animation: move-bg 1080s linear infinite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace;
+}
+
+@keyframes move-bg {
+    0% {
+   background-position: 0% 0;
+   }
+    100% {
+   background-position: 1000% 0;
+   }
+   }
+
+p {
+    margin: 0px;
+    line-height: 1;
+}
+
+.card p {
+    line-height: 1.5;
+}
+.main_heading {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.main_img {
+    width: 90vw;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.man {
+    height: 180px;
+    margin-right: 50px;
+}
+.cIpmpl {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.text-light {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(189, 194, 196);
+}
+
+.nIGMY {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #221eef;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #221eef;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .status .btn {
+      border-radius: 20px;
+      border: 0.2px solid rgb(187, 186, 186);
+  }
+
+  .status .btn:focus {
+    text-decoration: none;
+    border: none;
+}
+
+.svg {
+    padding: 0px;
+    width: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: none;
+    color: rgb(22, 72, 135);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+    margin-left: 4px;
+}
+
+.card-button:disabled {
+    background-color: rgb(233, 234, 235);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    color: rgb(189, 194, 196);
+    cursor: not-allowed;
+    width: fit-content;
+}
+.details {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.button, .card-button {
+    background: #7d7d7d url(../images/buttons.png) no-repeat center;
+    background-size: 100% 300%;
+    color: #e0e0e0;
+    font-size: 21px;
+    outline: 1px solid #000;
+    outline-offset: -.2vw;
+    padding: 5px 20px;
+    text-shadow: 3px 3px rgb(43, 42, 42);
+}
+
+.button:hover, .card-button:hover {
+    background: #7079aa url(../images/buttons.png) no-repeat bottom;
+    background-size: 100% 300%;
+    color: #ffffa0;
+}
+
+.navbar {
+    background-image: url("../images/nav-bg.PNG");
+    border: none;
+    border-radius: 0px;
+    
+}
+
+.outline {
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    outline: 1px solid #000;
+    outline-offset: -.2vw;
+    padding: 5px 10px;
+}
+
+
+nav .button {
+    font-size: 20px;
+}
+
+.drawer, .drawer-1, .drawer-2, .drawer-3 {
+    visibility: hidden;
+    height: 0;
+}
+.card-img {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0%;
+    padding: 20px;
+    height: 200px;
+    width: auto;
+
+}
+.row {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+}
+
+.light {
+    color: gray;
+}
+
+.card-title {
+    font-size: 45px;
+    line-height: 1.1;
+    color: black;
+}
+.card {
+    margin-top: 20px;
+    min-width: 280px;
+    width: 100%;
+    line-height: 1.5;
+    align-self: baseline;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: rgb(25 19 38 / 20%) 0px 2px 12px -8px, rgb(25 19 38 / 10%) 0px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.main_heading h1 {
+	font-size: 75px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    color: rgb(7, 7, 7);
+}
+
+.color {
+    color:#221eff
+}
+
+.color-svg {
+    padding-left: 4px;
+    height: 18px;
+    width: auto;
+    fill: rgb(22, 72, 135);
+    cursor: pointer;
+}
+
+
+.logo-div a {
+    color: white !important;
+    align-content: center;
+}
+
+
+.top-right-menu-ul
+{
+	margin-top: 10px;
+}
+
+/* Bootstrap CSS */
+
+.navbar-toggler {
+    vertical-align: middle!important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow:none;
+}
+
+@media screen and (min-width: 200px) {
+    .navbar .container {
+        max-width: none;
+        align-content: space-around;
+        vertical-align: middle;
+        width: auto;
+        text-align: center;
+    }
+
+    .logo-div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.navbar-brand > img {
+    display: inline;
+}
+
+a.navbar-brand  {
+    font-size: 25px;
+}
+
+.navbar-nav 
+{	margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar-nav li a
+{
+	color: white !important;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.navbar-nav li a:hover
+{
+	text-decoration: underline;
+}
+
+
+.nav-button {
+    float: right;
+    display: flex;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar-nav {
+        margin-left: 0px;
+        margin-right: 0px;
+        } 
+}
+
+.nav-pills .nav-link.comm {
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.nav-pills .nav-link.color {
+    color: #221eff;
+    border: 1px solid #221eff;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+	/* Typography CSS */
+
+.main_img {
+    width: 50vw;
+}
+body
+{
+	overflow-x: hidden;
+}
+
+.main_heading {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.main_heading h1
+{
+	font-size: 85px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    color: rgb(7, 7, 7);
+}
+
+
+
+.logo-div a
+{
+    color: white !important;
+}
+
+
+.top-right-menu-ul
+{   margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+}
